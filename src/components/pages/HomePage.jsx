@@ -1,5 +1,4 @@
-import Article from "../blog-post/Article";
-import { BlogPost } from "../blog-post/BlogPost";
+import { Article } from "../blog-post/Article";
 import { Carousel } from "../carousel/Carousel";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
@@ -11,8 +10,7 @@ export default function HomePage() {
       <Header />
       <Carousel />
       <Trending />
-      {/* <BlogPost /> */}
-      <Article/>
+      <Article />
       <Footer />
     </div>
   );

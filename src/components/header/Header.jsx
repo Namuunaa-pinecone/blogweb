@@ -1,5 +1,6 @@
 import { MetaIcon } from "../svg/header-icon/MetaIcon";
 import { SearchIcon } from "../svg/header-icon/SearchIcon";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -7,12 +8,12 @@ export const Header = () => {
       <div className="flex container max-w-[1216px] justify-between items-center">
         <MetaIcon />
         <div className="flex gap-[40px]">
-          <div>Home</div>
-          <div>Blog</div>
-          <div>Contact</div>
+          <Link href="/">Home</Link>
+          <Link href="/blog-listing">Blog</Link>
+          <Link href="/contact-us">Contact</Link>
         </div>
         <button className="flex items-center gap-[12px] rounded-[5px] py-[8px] px-[16px] bg-gray-200">
-          <div>Search</div>
+          <input type="text" placeholder="Search`" />
           <SearchIcon />
         </button>
       </div>

@@ -1,17 +1,13 @@
-import Article from "../blog-post/Article"
+import Article from "../blog-post/ArticleCard";
+import { Footer } from "../footer/Footer";
+import { Header } from "../header/Header";
 
-const { BlogPost } = require("../blog-post/BlogPost")
-const { Footer } = require("../footer/Footer")
-const { Header } = require("../header/Header")
-
-const BlogListingPage=()=>{
-    return(
-        <div>
-            <Header/>
-            <Article/>
-            <Footer/>
-        </div>
-    )
-}
-
-export default BlogListingPage;
+export const BlogListingPage = () => {
+  return (
+    <div>
+      <Header />
+      <Article />
+      <Footer />
+    </div>
+  );
+};
