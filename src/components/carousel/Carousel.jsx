@@ -3,7 +3,6 @@ import { BackIcon } from "../svg/hero-icon/BackIcon";
 import { ForwardIcon } from "../svg/hero-icon/ForwardIcon";
 
 export const Carousel = () => {
-  const slides = [{ color: "blue" }, { color: "red" }, { color: "orange" }];
 
   const [post, setPost] = useState(0);
 

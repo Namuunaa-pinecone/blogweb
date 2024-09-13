@@ -1,13 +1,10 @@
-import Article from "../blog-post/ArticleCard";
-import { Footer } from "../footer/Footer";
-import { Header } from "../header/Header";
+import { Article } from "../blog-post/Article";
+// import MainLayout from "../layout/MainLayout";
 
 export const BlogListingPage = () => {
   return (
     <div>
-      <Header />
       <Article />
-      <Footer />
     </div>
   );
 };
